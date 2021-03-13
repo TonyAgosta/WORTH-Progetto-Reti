@@ -12,11 +12,17 @@ Le card appena create sono automaticamente inserite nella lista TODO. Qualsiasi 
 
 Ad ogni progetto è associata una chat di gruppo, e tutti i membri di quel progetto, se online (dopo aver effettuato il login), possono ricevere i messaggi inviati sulla chat. Sulla chat il sistema invia inoltre automaticamente le notifiche di eventi legati allo spostamento di una card del progetto da una lista all’altra.
 Un utente registrato e dopo login eseguita con successo ha i permessi per:
+
   ● recuperare la lista di tutti gli utenti registrati al servizio;
+  
   ● recuperare la lista di tutti gli utenti registrati al servizio e collegati al servizio (in stato online);
+  
   ● creare un progetto;
+  
   ●recuperare la lista dei progetti di cui è membro.
+  
 Un utente che ha creato un progetto ne diventa automaticamente membro. Può aggiungere altri utenti registrati come membri del progetto. Tutti i membri del progetto hanno gli stessi diritti (il creatore stesso è un membro come gli altri), in particolare:
+
 ● aggiungere altri utenti registrati come membri del progetto;
 ● recuperare la lista dei membri del progetto;
 ● creare card nel progetto;
