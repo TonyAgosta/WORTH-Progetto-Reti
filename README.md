@@ -15,7 +15,8 @@ Un utente registrato e dopo login eseguita con successo ha i permessi per:
 
   ● recuperare la lista di tutti gli utenti registrati al servizio;
   
-  ● recuperare la lista di tutti gli utenti registrati al servizio e collegati al servizio (in stato online);
+  ● recuperare la lista di tutti gli utenti registrati al servizio e collegati al servizio (in stato online); 
+  
   ● creare un progetto;
   
   ●recuperare la lista dei progetti di cui è membro.
@@ -23,12 +24,21 @@ Un utente registrato e dopo login eseguita con successo ha i permessi per:
 Un utente che ha creato un progetto ne diventa automaticamente membro. Può aggiungere altri utenti registrati come membri del progetto. Tutti i membri del progetto hanno gli stessi diritti (il creatore stesso è un membro come gli altri), in particolare:
 
 ● aggiungere altri utenti registrati come membri del progetto;
+
 ● recuperare la lista dei membri del progetto;
+
 ● creare card nel progetto;
+
 ● recuperare la lista di card associate ad un progetto;
+
 ● recuperare le informazioni di una specifica card del progetto;
-● recuperare la “storia” di una specifica card del progetto (vedi seguito per dettagli);
-● spostare qualsiasi card del progetto (rispettando i vincoli di Fig.1);
+
+● recuperare la “storia” di una specifica card del progetto;
+
+● spostare qualsiasi card del progetto;
+
 ● inviare un messaggio sulla chat di progetto;
+
 ● leggere messaggi dalla chat di gruppo;
+
 ● cancellare il progetto.
