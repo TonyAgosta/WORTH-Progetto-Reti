@@ -16,7 +16,6 @@ Un utente registrato e dopo login eseguita con successo ha i permessi per:
   ● recuperare la lista di tutti gli utenti registrati al servizio;
   
   ● recuperare la lista di tutti gli utenti registrati al servizio e collegati al servizio (in stato online);
-  
   ● creare un progetto;
   
   ●recuperare la lista dei progetti di cui è membro.
