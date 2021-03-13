@@ -15,7 +15,7 @@ Un utente registrato e dopo login eseguita con successo ha i permessi per:
   ●recuperare la lista dei progetti di cui è membro.
 Un utente che ha creato un progetto ne diventa automaticamente membro. Può aggiungere altri utenti registrati come membri del progetto. Tutti i membri del progetto hanno gli stessi diritti (il creatore stesso è un membro come gli altri), in particolare:
   ● aggiungere altri utenti registrati come membri del progetto;
-● recuperare la lista dei membri del progetto;
+	● recuperare la lista dei membri del progetto;
 ● creare card nel progetto;
 ● recuperare la lista di card associate ad un progetto;
 ● recuperare le informazioni di una specifica card del progetto;
