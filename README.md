@@ -43,11 +43,17 @@ Un utente che ha creato un progetto ne diventa automaticamente membro. Può aggi
 
 ● cancellare il progetto.
 
-# Specifiche per l'implementazione
+# Specifiche dell'implementazione
 ● la fase di registrazione è implementata mediante RMI.
+
 ● La fase di login deve essere effettuata come prima operazione dopo aver instaurato una connessione TCP con il server. In risposta all’operazione di login, il server invia anche la lista degli utenti registrati e il loro stato (online, offline). A seguito della login il client si registra ad un servizio di notifica del server per ricevere aggiornamenti sullo stato degli utenti registrati (online/offline). Il servizio di notifica è implementato con il meccanismo di RMI callback. Il client mantiene una struttura dati per tenere traccia della lista degli utenti registrati e il loro stato (online/offline), la lista viene quindi aggiornata a seguito della ricezione di una callback (attraverso la quale il server manda gli aggiornamenti).
+
 ● dopo previa login effettuata con successo, l’utente interagisce, secondo il modello client-server (richieste/risposte), con il server sulla connessione TCP creata, inviando i comandi elencati in precedenza. Tutte le operazioni sono effettuate su questa connessione TCP, eccetto la registrazione (RMI), le operazioni di visualizzazione della lista degli utenti (listUsers e listOnlineusers) che usano la struttura dati locale del client aggiornata tramite il meccanismo di RMI callback (come descritto al punto precedente) e le operazioni sulla chat.
+
 ● Il server effettua il multiplexing dei canali mediante NIO.
+
 ● L'utente interagisce con WORTH mediante un client che può utilizza una interfaccia a linea di comando, definendo un insieme di comandi, presentati in un menu.
+
 ● La chat di progetto è realizzata usando UDP multicast (un client può inviare direttamente i messaggi ad altri client).
+
 ● Il server persiste lo stato del sistema, in particolare: le informazioni di registrazione, la lista dei progetti (inclusi membri, card e lo stato delle liste). Lo stato dei progetti è stato reso persistente sul file system come descritto di seguito: una directory per ogni progetto e un file per ogni card del progetto (sul file sono accodati gli eventi di spostamento relativi alla card). Quando il server viene riavviato tali informazioni sono utilizzate per ricostruire lo stato del sistema.
